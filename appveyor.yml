@@ -24,6 +24,7 @@ install:
   - npm install gitbook-cli -g
   - gitbook install
 build_script:
+  - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe
   - make
 test: off
 on_success:
