@@ -18,15 +18,15 @@ branches:
     - master
 # Install scripts. (runs after repo cloning)
 install:
-  - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe  
-  - ps: $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+  # - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe  
+  # - ps: $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
   # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # install modules
   - npm install gitbook-cli -g
   - gitbook install
 build_script:
-  - make
+  - bash: make
 test: off
 on_success:
   - git config --global credential.helper store
