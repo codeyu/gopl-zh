@@ -3,17 +3,11 @@ init:
 version: '{build}'
 environment:  
   matrix:
-    # node.js
-    - nodejs_version: "6"
-    - nodejs_version: "5"
-    - nodejs_version: "4"
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
   access_token:
     secure: gPLaCoISbGAJCbPE7vGAEkRMtiDH17XvyEzweZlp8pt6zjsOCTMZlmd1296tzgcz
   git_email:
     secure: dCEJcIf4jXWH0PrQcRaXuvvT8l7C5GwosxOsmi0c564=
-platform:  
-  - x86
-  - x64
 # Start builds on tags only (GitHub and BitBucket)
 skip_non_tags: true
 pull_requests:
