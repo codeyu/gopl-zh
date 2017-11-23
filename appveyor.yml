@@ -30,11 +30,12 @@ build_script:
   - make
 test: off
 on_success:
+  - ps: copy ./_book -Recurse ./output
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "$($env:git_email)"
   - git config --global user.name "codeyu"
   - git config --global core.autocrlf true
   - git checkout master
-  - git subtree split --prefix _book -b gh-pages
+  - git subtree split --prefix output -b gh-pages
   - git push -f origin gh-pages:gh-pages

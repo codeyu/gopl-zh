@@ -1,5 +1,5 @@
 # Go语言圣经（中文版）
-
+[![Build status](https://ci.appveyor.com/api/projects/status/ngtcqgbg199giq7y?svg=true)](https://ci.appveyor.com/project/codeyu/gopl-zh)  
 Go语言圣经 [《The Go Programming Language》](http://gopl.io) 中文版本，仅供学习交流之用。
 
 ![](cover_middle.jpg)
