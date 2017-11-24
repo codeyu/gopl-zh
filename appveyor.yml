@@ -36,8 +36,5 @@ on_success:
   - git config --global user.name "codeyu"
   - git config --global core.autocrlf true
   - git checkout master
-  - ps: copy ./_book -Recurse ./publish
-  - git add .
-  - git commit -m 'publish'
-  - git subtree split --prefix publish -b gh-pages
+  - git subtree split --prefix _book -b gh-pages
   - git push -f origin gh-pages:gh-pages
