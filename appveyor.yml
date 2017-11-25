@@ -1,9 +1,9 @@
 init:
-  - git config --global core.autocrlf true
+  - git config --global core.autocrlf false
 version: '{build}'
 environment:  
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       nodejs_version: "8"
   access_token:
     secure: gPLaCoISbGAJCbPE7vGAEkRMtiDH17XvyEzweZlp8pt6zjsOCTMZlmd1296tzgcz
@@ -18,7 +18,7 @@ branches:
     - master
 # Install scripts. (runs after repo cloning)
 install:
-  - copy C:\MinGW\bin\mingw64-make.exe C:\MinGW\bin\make.exe 
+  - copy C:\MinGW\bin\mingw32-make.exe C:\MinGW\bin\make.exe 
   - set PATH=%PATH%;C:\MinGW\bin
   # - ps: $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
   # Get the latest stable version of Node.js or io.js
