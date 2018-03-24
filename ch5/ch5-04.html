@@ -1166,7 +1166,7 @@
                 <a href="../ch8/ch8-08.html">
             
                     
-                    示例: 并发的字典遍历
+                    示例: 并发的目录遍历
             
                 </a>
             
@@ -1276,7 +1276,7 @@
                 <a href="../ch9/ch9-05.html">
             
                     
-                    sync.Once初始化
+                    sync.Once惰性初始化
             
                 </a>
             
@@ -1632,7 +1632,7 @@
                 <a href="../ch12/ch12-07.html">
             
                     
-                    获取结构体字段标识
+                    获取结构体字段标签
             
                 </a>
             
@@ -1896,7 +1896,7 @@ fmt.Printf(<span class="hljs-string">&quot;%v&quot;</span>, err)
     <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, err
 }
 </code></pre>
-<p>&#x5F53;&#x5BF9;html.Parse&#x7684;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x65F6;&#xFF0C;findLinks&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;html.Parse&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;&#x7F3A;&#x5C11;&#x4E24;&#x6761;&#x91CD;&#x8981;&#x4FE1;&#x606F;&#xFF1A;1&#x3001;&#x9519;&#x8BEF;&#x53D1;&#x751F;&#x5728;&#x89E3;&#x6790;&#x5668;&#xFF1B;2&#x3001;url&#x5DF2;&#x7ECF;&#x88AB;&#x89E3;&#x6790;&#x3002;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x6709;&#x52A9;&#x4E8E;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#xFF0C;findLinks&#x4F1A;&#x6784;&#x9020;&#x65B0;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x8FD4;&#x56DE;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#xFF1A;</p>
+<p>&#x5F53;&#x5BF9;html.Parse&#x7684;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x65F6;&#xFF0C;findLinks&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;html.Parse&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;&#x7F3A;&#x5C11;&#x4E24;&#x6761;&#x91CD;&#x8981;&#x4FE1;&#x606F;&#xFF1A;1&#x3001;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF08;html parser&#xFF09;&#xFF1B;2&#x3001;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x7684;url&#x3002;&#x56E0;&#x6B64;&#xFF0C;findLinks&#x6784;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x65E2;&#x5305;&#x542B;&#x4E86;&#x8FD9;&#x4E24;&#x9879;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;&#x4E86;&#x5E95;&#x5C42;&#x7684;&#x89E3;&#x6790;&#x51FA;&#x9519;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
 <pre><code class="lang-Go">doc, err := html.Parse(resp.Body)
 resp.Body.Close()
 <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
@@ -2018,7 +2018,7 @@ os.RemoveAll(dir) <span class="hljs-comment">// ignore errors; $TMPDIR is cleane
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"错误","level":"1.6.4","depth":2,"next":{"title":"函数值","level":"1.6.5","depth":2,"path":"ch5/ch5-05.md","ref":"ch5/ch5-05.md","articles":[]},"previous":{"title":"多返回值","level":"1.6.3","depth":2,"path":"ch5/ch5-03.md","ref":"ch5/ch5-03.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"preface.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言圣经","language":"zh-hans","gitbook":"3.x","description":"<The Go Programming Language>中文版"},"file":{"path":"ch5/ch5-04.md","mtime":"2017-11-25T08:30:51.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-25T08:34:59.741Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"错误","level":"1.6.4","depth":2,"next":{"title":"函数值","level":"1.6.5","depth":2,"path":"ch5/ch5-05.md","ref":"ch5/ch5-05.md","articles":[]},"previous":{"title":"多返回值","level":"1.6.3","depth":2,"path":"ch5/ch5-03.md","ref":"ch5/ch5-03.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"preface.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言圣经","language":"zh-hans","gitbook":"3.x","description":"<The Go Programming Language>中文版"},"file":{"path":"ch5/ch5-04.md","mtime":"2018-03-24T00:30:37.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-24T00:31:55.175Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

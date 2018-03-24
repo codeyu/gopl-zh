@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>示例: 并发的字典遍历 · Go语言圣经</title>
+        <title>示例: 并发的目录遍历 · Go语言圣经</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -1166,7 +1166,7 @@
                 <a href="ch8-08.html">
             
                     
-                    示例: 并发的字典遍历
+                    示例: 并发的目录遍历
             
                 </a>
             
@@ -1276,7 +1276,7 @@
                 <a href="../ch9/ch9-05.html">
             
                     
-                    sync.Once初始化
+                    sync.Once惰性初始化
             
                 </a>
             
@@ -1632,7 +1632,7 @@
                 <a href="../ch12/ch12-07.html">
             
                     
-                    获取结构体字段标识
+                    获取结构体字段标签
             
                 </a>
             
@@ -1856,7 +1856,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >示例: 并发的字典遍历</a>
+        <a href=".." >示例: 并发的目录遍历</a>
     </h1>
 </div>
 
@@ -1980,7 +1980,7 @@ $ ./du2 -v $HOME /usr /bin /etc
 127169 files  52.9 GB
 175931 files  62.2 GB
 213201 files  62.7 GB
-</code></pre><p>&#x7136;&#x800C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x8FD8;&#x662F;&#x4F1A;&#x82B1;&#x4E0A;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x624D;&#x4F1A;&#x7ED3;&#x675F;&#x3002;&#x65E0;&#x6CD5;&#x5BF9;walkDir&#x505A;&#x5E76;&#x884C;&#x5316;&#x5904;&#x7406;&#x6CA1;&#x4EC0;&#x4E48;&#x522B;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x65E0;&#x975E;&#x662F;&#x56E0;&#x4E3A;&#x78C1;&#x76D8;&#x7CFB;&#x7EDF;&#x5E76;&#x884C;&#x9650;&#x5236;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7B2C;&#x4E09;&#x4E2A;&#x7248;&#x672C;&#x7684;du&#xFF0C;&#x4F1A;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;walkDir&#x7684;&#x8C03;&#x7528;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;goroutine&#x3002;&#x5B83;&#x4F7F;&#x7528;sync.WaitGroup (&#xA7;8.5)&#x6765;&#x5BF9;&#x4ECD;&#x65E7;&#x6D3B;&#x8DC3;&#x7684;walkDir&#x8C03;&#x7528;&#x8FDB;&#x884C;&#x8BA1;&#x6570;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;goroutine&#x4F1A;&#x5728;&#x8BA1;&#x6570;&#x5668;&#x51CF;&#x4E3A;&#x96F6;&#x7684;&#x65F6;&#x5019;&#x5C06;fileSizes&#x8FD9;&#x4E2A;channel&#x5173;&#x95ED;&#x3002;</p>
+</code></pre><p>&#x7136;&#x800C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x8FD8;&#x662F;&#x4F1A;&#x82B1;&#x4E0A;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x624D;&#x4F1A;&#x7ED3;&#x675F;&#x3002;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5E76;&#x53D1;&#x8C03;&#x7528;walkDir&#xFF0C;&#x4ECE;&#x800C;&#x53D1;&#x6325;&#x78C1;&#x76D8;&#x7CFB;&#x7EDF;&#x7684;&#x5E76;&#x884C;&#x6027;&#x80FD;&#x3002;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7B2C;&#x4E09;&#x4E2A;&#x7248;&#x672C;&#x7684;du&#xFF0C;&#x4F1A;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;walkDir&#x7684;&#x8C03;&#x7528;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;goroutine&#x3002;&#x5B83;&#x4F7F;&#x7528;sync.WaitGroup (&#xA7;8.5)&#x6765;&#x5BF9;&#x4ECD;&#x65E7;&#x6D3B;&#x8DC3;&#x7684;walkDir&#x8C03;&#x7528;&#x8FDB;&#x884C;&#x8BA1;&#x6570;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;goroutine&#x4F1A;&#x5728;&#x8BA1;&#x6570;&#x5668;&#x51CF;&#x4E3A;&#x96F6;&#x7684;&#x65F6;&#x5019;&#x5C06;fileSizes&#x8FD9;&#x4E2A;channel&#x5173;&#x95ED;&#x3002;</p>
 <p><u><i>gopl.io/ch8/du3</i></u></p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> main() {
     <span class="hljs-comment">// ...determine roots...</span>
@@ -2050,7 +2050,7 @@ $ ./du2 -v $HOME /usr /bin /etc
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"示例: 并发的字典遍历","level":"1.9.8","depth":2,"next":{"title":"并发的退出","level":"1.9.9","depth":2,"path":"ch8/ch8-09.md","ref":"ch8/ch8-09.md","articles":[]},"previous":{"title":"基于select的多路复用","level":"1.9.7","depth":2,"path":"ch8/ch8-07.md","ref":"ch8/ch8-07.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"preface.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言圣经","language":"zh-hans","gitbook":"3.x","description":"<The Go Programming Language>中文版"},"file":{"path":"ch8/ch8-08.md","mtime":"2017-11-25T08:30:51.588Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-25T08:34:59.741Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"示例: 并发的目录遍历","level":"1.9.8","depth":2,"next":{"title":"并发的退出","level":"1.9.9","depth":2,"path":"ch8/ch8-09.md","ref":"ch8/ch8-09.md","articles":[]},"previous":{"title":"基于select的多路复用","level":"1.9.7","depth":2,"path":"ch8/ch8-07.md","ref":"ch8/ch8-07.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"preface.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言圣经","language":"zh-hans","gitbook":"3.x","description":"<The Go Programming Language>中文版"},"file":{"path":"ch8/ch8-08.md","mtime":"2018-03-24T00:30:37.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-24T00:31:55.175Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
