@@ -13,7 +13,15 @@ Go语言圣经 [《The Go Programming Language》](http://gopl.io) 中文版本�
 
 - http://gopl-zh.codeyu.com/ (最新)
 - http://gopl-zh.b0.upaiyun.com/
+- http://gopl-zh.simple-is-best.tk/
+- http://gopl-zh.codeyu.com/ (最新)
+- http://gopl-zh.b0.upaiyun.com/
+- http://docs.ruanjiadeng.com/gopl-zh/
+- http://shifei.me/gopl-zh/
+- http://2goo.info/media/html/gopl-zh-gh-pages/
+- http://docs.plhwin.com/gopl-zh/
 - https://docs.hacknode.org/gopl-zh/
+- http://books.studygolang.com/gopl-zh/
 
 {% include "./version.md" %}
 
